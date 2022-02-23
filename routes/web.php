@@ -40,4 +40,4 @@ Route::get('/', [PageController::class, 'index']);
 //kedua
 Route::get('/about', [PageController::class, 'about']); 
 //ketiga
-Route::get('/articles/{id}', [PageController::class, 'articles']); 
+Route::get('/articles/{id}', [PageController::class, 'articles']);
