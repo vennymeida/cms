@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,8 +39,8 @@ Route::get('/articles/{id}', function ($id) {
 
 //PRAKTIKUM 2
 //pertama
-Route::get('/', [PageController::class, 'index']); 
+Route::get('/', [HomeController::class, 'index']); 
 //kedua
-Route::get('/about', [PageController::class, 'about']); 
+Route::get('/about', [AboutController::class, 'about']); 
 //ketiga
-Route::get('/articles/{id}', [PageController::class, 'articles']);
+Route::get('/articles/{id}', [ArticleController::class, 'articles']);
