@@ -20,7 +20,7 @@ use App\Http\Controllers\PageController;
 
 //PRAKTIKUM 1
 //nomor1
-Route::get('/', function () {
+/*Route::get('/', function () {
     echo "Hi! Selamat Datang di Website Laravel";}) -> name('hello'); 
 //nomor2 
 Route::get('/about', function () {
@@ -32,3 +32,12 @@ Route::get('/about', function () {
 Route::get('/articles/{id}', function ($id) {
     echo "Ini adalah halaman Artikel dengan ID: ".$id;
 });
+*/
+
+//PRAKTIKUM 2
+//pertama
+Route::get('/', [PageController::class, 'index']); 
+//kedua
+Route::get('/about', [PageController::class, 'about']); 
+//ketiga
+Route::get('/articles/{id}', [PageController::class, 'articles']); 

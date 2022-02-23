@@ -11,7 +11,7 @@ class PageController extends Controller
     }
     
     public function about(){
-        return "2041720233 <br> Thirsya Widya Sulaiman <br> TI-2G";
+        return "2041720100 <br> Venny Meida Hersianty <br> TI-2G";
     }
     
     public function articles ($id){
