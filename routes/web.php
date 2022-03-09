@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Models\ContactUs;
 
 /*
 |--------------------------------------------------------------------------
@@ -124,6 +125,4 @@ use App\Http\Controllers\ArticleController;
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', function(){
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index']);
