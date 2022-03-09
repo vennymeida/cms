@@ -9,6 +9,6 @@ class ContactUs extends Model
 {
     use HasFactory;
     public static function index(){
-        ContactUs::all();
+        return ContactUs::all();
     }
 }

@@ -17,6 +17,7 @@ class CreateContactUsTable extends Migration
             $table->id();
             $table->string('profile', 100);
             $table->string('deskripsi', 100);
+            $table->string('class', 100);
             $table->timestamps();
         });
     }

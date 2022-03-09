@@ -178,14 +178,17 @@
              
          </div>   
       <!--end of .staff-->
-        
-    <!-- <img src="images/pop1.png" width="486" height="137" class="firstpop" alt="pop">
+      @foreach($contact_us as $contact)
+        <img src="{{$contact->deskripsi}}" width="486" height="137" class="{{$contact->class}}" alt="pop">
+    @endforeach
+
+    <!-- <img src="images/popup1.png" width="486" height="137" class="firstpop" alt="pop">
     <img src="images/popup2.png" width="487" height="137"  class="secondpop" alt="pop">
     <img src="images/popup3.png" width="487" height="137"  class="thirdpop" alt="pop">
     <img src="images/popup4.png" width="487" height="137"  class="fourthpop" alt="pop">  
     <img src="images/popup6.png" width="487" height="137"  class="fifthpop" alt="pop">  
-    <img src="images/popup7.png" width="487" height="137"  class="sixthpop" alt="pop">  
-     -->
+    <img src="images/popup7.png" width="487" height="137"  class="sixthpop" alt="pop">   -->
+    
     
     </div> 
     <!--contactus class-->
