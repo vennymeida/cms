@@ -121,8 +121,8 @@ use App\Http\Models\ContactUs;
 //     Sejarah Educa Studio<br>
 //     Dapat juga mengunjungi profile saya di @vennymeida";
 //    });
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [HomeController::class, 'index']);

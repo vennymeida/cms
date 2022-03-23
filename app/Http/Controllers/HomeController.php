@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ContactUs;
+use Illuminate\Support\Facades\Auth;
+
 
 class HomeController extends Controller
 {
@@ -18,7 +20,17 @@ class HomeController extends Controller
     // public function articles ($id){
     //     return "Ini adalah halaman Artikel dengan ID: $id";
     // }
-    public function index(){
-        return view('home', ['contact_us'=>ContactUs::index()]);
-    }
+    // public function index(){
+    //       return view('home', ['contact_us'=>ContactUs::index()]);
+    // }
+
+//     public function index(){
+//         return view('dashboard');
+//    }
+
+   public function index()
+   {
+       $user = Auth::user();
+       return view('dashboard',['user' => $user]);
+   }
 }
