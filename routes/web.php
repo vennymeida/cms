@@ -129,3 +129,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/', [HomeController::class, 'home']);
 
 Route::resource('articles', ArticleController::class);
+
+Route::get('/article/cetak_pdf', [ArticleController::class,'cetak_pdf'])->name('cetak_pdf');
