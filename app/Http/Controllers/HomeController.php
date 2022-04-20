@@ -24,9 +24,10 @@ class HomeController extends Controller
     //       return view('home', ['contact_us'=>ContactUs::index()]);
     // }
 
-//     public function index(){
-//         return view('dashboard');
-//    }
+    public function home()
+   {
+       return view('index');
+   }
 
    public function index()
    {
